@@ -1,0 +1,34 @@
+/* Hero */
+.hero {
+  background: #2f303a;
+}
+
+.hero h1 {
+  color: #ffffff;
+}
+
+.order {
+  color: #ffffff;
+}
+
+/* Преимущества */
+.h-hiden {
+  visibility: hidden;
+}
+
+.advantages {
+  color: #212121;
+}
+
+.advantages p {
+  color: #757575;
+}
+
+/* Наша команда */
+.team {
+  background: #f5f4fa;
+}
+
+.team p {
+  color: #757575;
+}
