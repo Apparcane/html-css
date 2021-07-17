@@ -1,3 +1,10 @@
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #2196f3;
+  --white: #ffffff;
+  --footer-adress-color: rgba(255, 255, 255, 0.6);
+}
+
 body {
   font-family: Roboto;
 }
@@ -13,19 +20,19 @@ a {
 }
 
 .logo {
-  color: #2196f3;
+  color: var(--secondary-text-color);
 }
 
 .nav__link {
-  color: #212121;
+  color: var(--primary-text-color);
 }
 
 .nav__link:hover {
-  color: #2196f3;
+  color: var(--secondary-text-color);
 }
 
 .active {
-  color: #2196f3;
+  color: var(--secondary-text-color);
 }
 
 /* Footer */
@@ -44,5 +51,5 @@ footer {
 }
 
 .foot__nav {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-adress-color);
 }

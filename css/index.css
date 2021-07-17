@@ -1,14 +1,22 @@
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #2196f3;
+  --text-color: #757575;
+  --white: #ffffff;
+  --footer-adress-color: rgba(255, 255, 255, 0.6);
+}
+
 /* Hero */
 .hero {
   background: #2f303a;
 }
 
 .hero h1 {
-  color: #ffffff;
+  color: var(--white);
 }
 
 .order {
-  color: #ffffff;
+  color: var(--white);
 }
 
 /* Преимущества */
@@ -21,7 +29,7 @@
 }
 
 .advantages p {
-  color: #757575;
+  color: var(--text-color);
 }
 
 /* Наша команда */
@@ -30,5 +38,5 @@
 }
 
 .team p {
-  color: #757575;
+  color: var(--text-color);
 }
