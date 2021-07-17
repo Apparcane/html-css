@@ -1,6 +1,6 @@
 :root {
   --primary-text-color: #212121;
-  --secondary-text-color: #2196f3;
+  --accent-color: #2196f3;
   --white: #ffffff;
   --footer-adress-color: rgba(255, 255, 255, 0.6);
 }
@@ -20,7 +20,7 @@ a {
 }
 
 .logo {
-  color: var(--secondary-text-color);
+  color: var(--accent-color);
 }
 
 .nav__link {
@@ -28,11 +28,11 @@ a {
 }
 
 .nav__link:hover {
-  color: var(--secondary-text-color);
+  color: var(--accent-color);
 }
 
 .active {
-  color: var(--secondary-text-color);
+  color: var(--accent-color);
 }
 
 /* Footer */

@@ -1,6 +1,7 @@
 :root {
   --primary-text-color: #212121;
-  --secondary-text-color: #2196f3;
+  /* --secondary-text-color: #212121; */
+  --accent-color: #2196f3;
   --text-color: #757575;
   --white: #ffffff;
   --footer-adress-color: rgba(255, 255, 255, 0.6);
@@ -25,7 +26,7 @@
 }
 
 .advantages {
-  color: #212121;
+  color: var(--primary-text-color);
 }
 
 .advantages p {
