@@ -20,10 +20,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-a {
-  text-decoration: none;
-}
-
 /* Header */
 .logo-link {
   color: #000000;
@@ -32,6 +28,7 @@ a {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
+  text-decoration: none;
 }
 
 .logo-link.foot {
@@ -48,6 +45,7 @@ a {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  text-decoration: none;
 }
 
 .nav__link:focus,
@@ -73,6 +71,15 @@ footer {
 
 .foot__nav {
   color: var(--footer-adress-color);
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
 }
 
 /* index */
@@ -82,18 +89,20 @@ footer {
   letter-spacing: 0.06em;
 }
 
-.hero h1 {
+.hero .title {
   color: var(--white);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
+  text-align: center;
 }
 
-.hero.order {
+.hero .order {
   color: var(--white);
   font-weight: bold;
   font-size: 16px;
   line-height: 1.9;
+  text-decoration: none;
 }
 
 /* Преимущества */
@@ -147,6 +156,7 @@ footer {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  font-family: inherit;
 }
 
 .filter input:focus,
