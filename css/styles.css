@@ -1,12 +1,23 @@
 :root {
   --primary-text-color: #212121;
   --accent-color: #2196f3;
+  --text-color: #757575;
   --white: #ffffff;
   --footer-adress-color: rgba(255, 255, 255, 0.6);
+  --background-primary-color: #f5f4fa;
+  --background-sec-color: #e5e5e5;
 }
 
+/* 
+  Все используемые шрифты: 
+    -Roboto (900, 700, 500, 400)
+    -Raleway (700)
+*/
+
 body {
-  font-family: Roboto;
+  background-color: var(--white);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
 }
 
 a {
@@ -17,6 +28,14 @@ a {
 .logo-link {
   color: #000000;
   font-size: 26px;
+  font-family: Raleway, serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.logo-link.foot {
+  color: #ffffff;
 }
 
 .logo {
@@ -25,8 +44,13 @@ a {
 
 .nav__link {
   color: var(--primary-text-color);
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
 }
 
+.nav__link:focus,
 .nav__link:hover {
   color: var(--accent-color);
 }
@@ -38,18 +62,107 @@ a {
 /* Footer */
 footer {
   background: #2f303a;
-  font-size: 14px;
-}
-
-.foot-logo-link {
-  color: #ffffff;
 }
 
 .address {
   color: #ffffff;
   font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
 }
 
 .foot__nav {
   color: var(--footer-adress-color);
+}
+
+/* index */
+/* Hero */
+.hero {
+  background: #2f303a;
+  letter-spacing: 0.06em;
+}
+
+.hero h1 {
+  color: var(--white);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+}
+
+.hero.order {
+  color: var(--white);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+/* Преимущества */
+.advantages h2 {
+  visibility: hidden;
+}
+
+.advantages {
+  color: var(--primary-text-color);
+  font-size: 14px;
+}
+
+.advantages.list h3 {
+  font-weight: bold;
+  line-height: 1.14;
+}
+
+.advantages p {
+  color: var(--text-color);
+  line-height: 1.71;
+}
+
+.team .our-team,
+.advantages.doing {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.7;
+}
+
+/* Наша команда */
+.team {
+  background: #f5f4fa;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.team h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.team p {
+  color: var(--text-color);
+}
+
+/* Portfoilo */
+/* Filer */
+.filter input {
+  background-color: var(--background-primary-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+}
+
+.filter input:focus,
+.filter input:hover {
+  background-color: var(--accent-color);
+}
+
+.examples h2 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  color: var(--primary-text-color);
+}
+
+.examples p {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--text-color);
 }

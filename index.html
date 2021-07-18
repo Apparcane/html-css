@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Документ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" />
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/index.css" />
   </head>
 
   <body>
@@ -30,20 +31,20 @@
       </nav>
 
       <a class="nav__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-      <a class="nav__link" href="tel:+380961111111">+38096 111 11 11</a>
+      <a class="nav__link" href="tel:+380961111111">+38 096 111 11 11</a>
     </header>
 
     <main>
       <!-- Герой -->
       <section class="hero">
         <h1>Эффективные решения для вашего бизнеса</h1>
-        <a class="order" href="">Заказать услугу</a>
+        <a class="hero order" href="">Заказать услугу</a>
       </section>
 
       <!-- Преимущества -->
       <section class="advantages">
-        <h2 class="h-hiden">Преимущества</h2>
-        <ul>
+        <h2>Преимущества</h2>
+        <ul class="advantages list">
           <li>
             <h3>Внимание к деталям</h3>
             <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
@@ -62,7 +63,7 @@
           </li>
         </ul>
 
-        <h2>Чем мы занимаемся</h2>
+        <h3 class="advantages doing">Чем мы занимаемся</h3>
         <img width="370px" src="./image/box1.png" alt="Програмированние" />
         <img width="370px" src="./image/box2.png" alt="Тестированние мобильной версии" />
         <img width="370px" src="./image/box3.png" alt="Выбор цвета" />
@@ -70,12 +71,12 @@
 
       <!-- Наша Команда -->
       <section class="team">
-        <h2>Наша Команда</h2>
+        <h2 class="our-team">Наша Команда</h2>
 
         <img src="./image/studio/igor.jpg" alt="фото Игорь Демьяненко" width="270" />
         <h3>Игорь Демьяненко</h3>
         <p>Product Designer</p>
-        <ul class="team-social">
+        <!-- <ul class="team-social">
           <li>
             <a href="" aria-label="Instagram">Instagram</a>
           </li>
@@ -88,12 +89,12 @@
           <li>
             <a href="" aria-label="LinkedIn">LinkedIn</a>
           </li>
-        </ul>
+        </ul> -->
 
         <img src="./image/studio/olga.jpg" alt="фото Ольга Репина" width="270" />
         <h3>Ольга Репина</h3>
         <p>Frontend Developer</p>
-        <ul class="team-social">
+        <!-- <ul class="team-social">
           <li>
             <a href="" aria-label="Instagram">Instagram</a>
           </li>
@@ -106,12 +107,12 @@
           <li>
             <a href="" aria-label="LinkedIn">LinkedIn</a>
           </li>
-        </ul>
+        </ul> -->
 
         <img src="./image/studio/Kola.jpg" alt="фото Николай Тарасов" width="270" />
         <h3>Николай Тарасов</h3>
         <p>Marketing</p>
-        <ul class="team-social">
+        <!-- <ul class="team-social">
           <li>
             <a href="" aria-label="Instagram">Instagram</a>
           </li>
@@ -124,12 +125,12 @@
           <li>
             <a href="" aria-label="LinkedIn">LinkedIn</a>
           </li>
-        </ul>
+        </ul> -->
 
         <img src="./image/studio/miha.jpg" alt="фото Михаил Ермаков" width="270" />
         <h3>Михаил Ермаков</h3>
         <p>UI Designer</p>
-        <ul class="team-social">
+        <!-- <ul class="team-social">
           <li>
             <a href="" aria-label="Instagram">Instagram</a>
           </li>
@@ -142,7 +143,7 @@
           <li>
             <a href="" aria-label="LinkedIn">LinkedIn</a>
           </li>
-        </ul>
+        </ul> -->
       </section>
 
       <!-- Постоянные клиенты -->
@@ -172,7 +173,7 @@
     </main>
 
     <footer>
-      <a class="foot-logo-link" href="./index.html"><span class="logo">Web</span>Studio</a>
+      <a class="logo-link foot" href="./index.html"><span class="logo">Web</span>Studio</a>
       <address class="address">
         г. Киев, пр-т Леси Украинки, 26 <br />
         <a class="foot__nav" href="mailto:info@devstudio.com">info@devstudio.com</a> <br />

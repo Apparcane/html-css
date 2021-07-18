@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Портфолио</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" />
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/portfolio.css" />
   </head>
 
   <body>
@@ -34,7 +35,8 @@
     </header>
 
     <main>
-      <ul>
+      <h1>Портфолио</h1>
+      <ul class="filter">
         <li><input type="button" value="Все" /></li>
         <li><input type="button" value="Веб-сайты" /></li>
         <li><input type="button" value="Приложения" /></li>
@@ -43,64 +45,148 @@
       </ul>
 
       <section class="examples">
-        <div>
-          <img src="./image/portfolio/tech.jpg" alt="Технокряк" />
-          <h3>Технокряк</h3>
-          <p>Веб-сайт</p>
+        <ul>
+          <li>
+            <a href="">
+              <img src="./image/portfolio/tech.jpg" alt="Технокряк" />
+              <h2>Технокряк</h2>
+              <p>Веб-сайт</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./image/portfolio/poster.jpg" alt="Постер" />
+              <h2>Постер New Orlean vs Golden Star</h2>
+              <p>Дизайн</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./image/portfolio/restourant.jpg" alt="Ресторан" />
+              <h2>Ресторан Seafood</h2>
+              <p>Приложение</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./image/portfolio/prime.jpg" alt="Проект Прайм" />
+              <h2>Проект Prime</h2>
+              <p>Маркетинг</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./image/portfolio/boxes.jpg" alt="Проект Боксес" />
+              <h2>Проект Boxes</h2>
+              <p>Приложение</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./image/portfolio/no-borders.jpg" alt="Но бордер" />
+              <h2>Inspiration has no Borders</h2>
+              <p>Веб-сайт</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./image/portfolio/limited.jpg" alt="Лимитед Едишин" />
+              <h2>Издание Limited Edition</h2>
+              <p>Дизайн</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./image/portfolio/lab.jpg" alt="Лаб" />
+              <h2>Проект LAB</h2>
+              <p>Маркетинг</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./image/portfolio/busines.jpg" alt="Рост бизнеса" />
+              <h2>Growing Business</h2>
+              <p>Приложение</p>
+            </a>
+          </li>
+        </ul>
+        <!-- Тот же самый список но дивами -->
+        <!-- <div>
+          <a href="">
+            <img src="./image/portfolio/tech.jpg" alt="Технокряк" />
+            <h2>Технокряк</h2>
+            <p>Веб-сайт</p>
+          </a>
         </div>
 
         <div>
-          <img src="./image/portfolio/poster.jpg" alt="Постер" />
-          <h3>Постер New Orlean vs Golden Star</h3>
-          <p>Дизайн</p>
+          <a href="">
+            <img src="./image/portfolio/poster.jpg" alt="Постер" />
+            <h2>Постер New Orlean vs Golden Star</h2>
+            <p>Дизайн</p>
+          </a>
         </div>
 
         <div>
-          <img src="./image/portfolio/restourant.jpg" alt="Ресторан" />
-          <h3>Ресторан Seafood</h3>
-          <p>Приложение</p>
+          <a href="">
+            <img src="./image/portfolio/restourant.jpg" alt="Ресторан" />
+            <h2>Ресторан Seafood</h2>
+            <p>Приложение</p>
+          </a>
         </div>
 
         <div>
-          <img src="./image/portfolio/prime.jpg" alt="Проект Прайм" />
-          <h3>Проект Prime</h3>
-          <p>Маркетинг</p>
+          <a href="">
+            <img src="./image/portfolio/prime.jpg" alt="Проект Прайм" />
+            <h2>Проект Prime</h2>
+            <p>Маркетинг</p>
+          </a>
         </div>
 
         <div>
-          <img src="./image/portfolio/boxes.jpg" alt="Проект Боксес" />
-          <h3>Проект Boxes</h3>
-          <p>Приложение</p>
+          <a href="">
+            <img src="./image/portfolio/boxes.jpg" alt="Проект Боксес" />
+            <h2>Проект Boxes</h2>
+            <p>Приложение</p>
+          </a>
         </div>
 
         <div>
-          <img src="./image/portfolio/no-borders.jpg" alt="Но бордер" />
-          <h3>Inspiration has no Borders</h3>
-          <p>Веб-сайт</p>
+          <a href="">
+            <img src="./image/portfolio/no-borders.jpg" alt="Но бордер" />
+            <h2>Inspiration has no Borders</h2>
+            <p>Веб-сайт</p>
+          </a>
         </div>
 
         <div>
-          <img src="./image/portfolio/limited.jpg" alt="Лимитед Едишин" />
-          <h3>Издание Limited Edition</h3>
-          <p>Дизайн</p>
+          <a href="">
+            <img src="./image/portfolio/limited.jpg" alt="Лимитед Едишин" />
+            <h2>Издание Limited Edition</h2>
+            <p>Дизайн</p>
+          </a>
         </div>
 
         <div>
-          <img src="./image/portfolio/lab.jpg" alt="Лаб" />
-          <h3>Проект LAB</h3>
-          <p>Маркетинг</p>
+          <a href="">
+            <img src="./image/portfolio/lab.jpg" alt="Лаб" />
+            <h2>Проект LAB</h2>
+            <p>Маркетинг</p>
+          </a>
         </div>
 
         <div>
-          <img src="./image/portfolio/busines.jpg" alt="Рост бизнеса" />
-          <h3>Growing Business</h3>
-          <p>Приложение</p>
-        </div>
+          <a href="">
+            <img src="./image/portfolio/busines.jpg" alt="Рост бизнеса" />
+            <h2>Growing Business</h2>
+            <p>Приложение</p>
+          </a>
+        </div> -->
       </section>
     </main>
 
     <footer>
-      <a class="foot-logo-link" href="./index.html"><span class="logo">Web</span>Studio</a>
+      <a class="logo-link foot" href="./index.html"><span class="logo">Web</span>Studio</a>
       <address class="address">
         г. Киев, пр-т Леси Украинки, 26 <br />
         <a class="foot__nav" href="mailto:info@devstudio.com">info@devstudio.com</a> <br />
