@@ -6,6 +6,7 @@
   --footer-adress-color: rgba(255, 255, 255, 0.6);
   --background-primary-color: #f5f4fa;
   --background-sec-color: #e5e5e5;
+  --background-footer: #2f303a;
 }
 
 /* 
@@ -57,9 +58,15 @@ body {
   color: var(--accent-color);
 }
 
+.container {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 /* Footer */
 footer {
-  background: #2f303a;
+  background: var(--background-footer);
 }
 
 .address {
@@ -75,6 +82,8 @@ footer {
 }
 
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -85,11 +94,14 @@ footer {
 /* index */
 /* Hero */
 .hero {
-  background: #2f303a;
+  background: var(--background-footer);
   letter-spacing: 0.06em;
+  text-align: center;
 }
 
-.hero .title {
+.hero.title {
+  margin-top: 0;
+  margin-bottom: 30px;
   color: var(--white);
   font-weight: 900;
   font-size: 44px;
@@ -97,36 +109,56 @@ footer {
   text-align: center;
 }
 
-.hero .order {
+.hero.order {
+  display: inline-block;
+
   color: var(--white);
   font-weight: bold;
   font-size: 16px;
   line-height: 1.9;
   text-decoration: none;
+
+  min-width: 200px;
+  background: var(--accent-color);
+  text-align: center;
+  border-radius: 4px;
+  padding: 10px 32px;
 }
 
 /* Преимущества */
-.advantages h2 {
-  visibility: hidden;
-}
-
 .advantages {
+  padding-top: 89px;
+  padding-bottom: 94px;
   color: var(--primary-text-color);
   font-size: 14px;
 }
 
-.advantages.list h3 {
+.advantages-title {
+  margin: 0;
+  /* visibility: hidden; */
+}
+
+.advantages-list h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: bold;
   line-height: 1.14;
 }
 
 .advantages p {
+  margin: 0;
   color: var(--text-color);
   line-height: 1.71;
 }
 
+.our-doing {
+  padding-bottom: 94px;
+}
+
 .team .our-team,
-.advantages.doing {
+.our-doing.title {
+  margin-top: 0;
+  margin-bottom: 50px;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.7;
@@ -137,15 +169,25 @@ footer {
   background: #f5f4fa;
   font-size: 16px;
   line-height: 1.19;
+  padding: 94px 0;
+}
+
+.team img {
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
 .team h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
 }
 
 .team p {
+  margin-top: 0;
+  margin-bottom: 0;
   color: var(--text-color);
 }
 

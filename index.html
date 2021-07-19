@@ -8,30 +8,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" />
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
     <header>
-      <a class="logo-link" href="./index.html"><span class="logo">Web</span>Studio</a>
+      <div class="container">
+        <a class="logo-link" href="./index.html"><span class="logo">Web</span>Studio</a>
 
-      <nav>
-        <ul class="list">
-          <li>
-            <a class="nav__link active" href="./index.html">Студия</a>
-          </li>
-          <li>
-            <a class="nav__link" href="./portfolio.html">Портфолио</a>
-          </li>
-          <li>
-            <a class="nav__link" href="./contacts.html">Контакты</a>
-          </li>
-        </ul>
-      </nav>
+        <nav>
+          <ul class="list">
+            <li>
+              <a class="nav__link active" href="./index.html">Студия</a>
+            </li>
+            <li>
+              <a class="nav__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li>
+              <a class="nav__link" href="./contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
 
-      <a class="nav__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-      <a class="nav__link" href="tel:+380961111111">+38 096 111 11 11</a>
+        <a class="nav__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <a class="nav__link" href="tel:+380961111111">+38 096 111 11 11</a>
+      </div>
     </header>
 
     <main>
@@ -43,142 +45,98 @@
 
       <!-- Преимущества -->
       <section class="advantages">
-        <h2 class="advantages title">Преимущества</h2>
-        <ul class="advantages list">
-          <li>
-            <h3>Внимание к деталям</h3>
-            <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-          </li>
-          <li>
-            <h3>Пунктуальность</h3>
-            <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-          </li>
-          <li>
-            <h3>Планирование</h3>
-            <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-          </li>
-          <li>
-            <h3>Современные технологии</h3>
-            <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="advantages-title">Преимущества</h2>
+          <ul class="advantages-list list">
+            <li>
+              <h3>Внимание к деталям</h3>
+              <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+            </li>
+            <li>
+              <h3>Пунктуальность</h3>
+              <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+            </li>
+            <li>
+              <h3>Планирование</h3>
+              <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+            </li>
+            <li>
+              <h3>Современные технологии</h3>
+              <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-        <h3 class="advantages doing">Чем мы занимаемся</h3>
-        <img width="370px" src="./image/studio/box1.png" alt="Програмированние" />
-        <img width="370px" src="./image/studio/box2.png" alt="Тестированние мобильной версии" />
-        <img width="370px" src="./image/studio/box3.png" alt="Выбор цвета" />
+      <section class="our-doing">
+        <div class="container">
+          <h3 class="our-doing title">Чем мы занимаемся</h3>
+          <img width="370px" src="./image/studio/box1.png" alt="Програмированние" />
+          <img width="370px" src="./image/studio/box2.png" alt="Тестированние мобильной версии" />
+          <img width="370px" src="./image/studio/box3.png" alt="Выбор цвета" />
+        </div>
       </section>
 
       <!-- Наша Команда -->
       <section class="team">
-        <h2 class="our-team">Наша Команда</h2>
+        <div class="container">
+          <h2 class="our-team">Наша Команда</h2>
 
-        <img src="./image/studio/igor.jpg" alt="фото Игорь Демьяненко" width="270" />
-        <h3>Игорь Демьяненко</h3>
-        <p>Product Designer</p>
-        <!-- <ul class="team-social">
-          <li>
-            <a href="" aria-label="Instagram">Instagram</a>
-          </li>
-          <li>
-            <a href="" aria-label="Twitter">Twitter</a>
-          </li>
-          <li>
-            <a href="" aria-label="Facebook">Facebook</a>
-          </li>
-          <li>
-            <a href="" aria-label="LinkedIn">LinkedIn</a>
-          </li>
-        </ul> -->
+          <img src="./image/studio/igor.jpg" alt="фото Игорь Демьяненко" width="270" />
+          <h3>Игорь Демьяненко</h3>
+          <p>Product Designer</p>
 
-        <img src="./image/studio/olga.jpg" alt="фото Ольга Репина" width="270" />
-        <h3>Ольга Репина</h3>
-        <p>Frontend Developer</p>
-        <!-- <ul class="team-social">
-          <li>
-            <a href="" aria-label="Instagram">Instagram</a>
-          </li>
-          <li>
-            <a href="" aria-label="Twitter">Twitter</a>
-          </li>
-          <li>
-            <a href="" aria-label="Facebook">Facebook</a>
-          </li>
-          <li>
-            <a href="" aria-label="LinkedIn">LinkedIn</a>
-          </li>
-        </ul> -->
+          <img src="./image/studio/olga.jpg" alt="фото Ольга Репина" width="270" />
+          <h3>Ольга Репина</h3>
+          <p>Frontend Developer</p>
 
-        <img src="./image/studio/Kola.jpg" alt="фото Николай Тарасов" width="270" />
-        <h3>Николай Тарасов</h3>
-        <p>Marketing</p>
-        <!-- <ul class="team-social">
-          <li>
-            <a href="" aria-label="Instagram">Instagram</a>
-          </li>
-          <li>
-            <a href="" aria-label="Twitter">Twitter</a>
-          </li>
-          <li>
-            <a href="" aria-label="Facebook">Facebook</a>
-          </li>
-          <li>
-            <a href="" aria-label="LinkedIn">LinkedIn</a>
-          </li>
-        </ul> -->
+          <img src="./image/studio/Kola.jpg" alt="фото Николай Тарасов" width="270" />
+          <h3>Николай Тарасов</h3>
+          <p>Marketing</p>
 
-        <img src="./image/studio/miha.jpg" alt="фото Михаил Ермаков" width="270" />
-        <h3>Михаил Ермаков</h3>
-        <p>UI Designer</p>
-        <!-- <ul class="team-social">
-          <li>
-            <a href="" aria-label="Instagram">Instagram</a>
-          </li>
-          <li>
-            <a href="" aria-label="Twitter">Twitter</a>
-          </li>
-          <li>
-            <a href="" aria-label="Facebook">Facebook</a>
-          </li>
-          <li>
-            <a href="" aria-label="LinkedIn">LinkedIn</a>
-          </li>
-        </ul> -->
+          <img src="./image/studio/miha.jpg" alt="фото Михаил Ермаков" width="270" />
+          <h3>Михаил Ермаков</h3>
+          <p>UI Designer</p>
+        </div>
       </section>
 
       <!-- Постоянные клиенты -->
-      <section>
-        <h2>Постоянные клиенты</h2>
-        <ul class="list">
-          <li>
-            <img src="./image/studio/yaco.svg" alt="yaco company" />
-          </li>
-          <li>
-            <img src="./image/studio/company.svg" alt="company one" />
-          </li>
-          <li>
-            <img src="./image/studio/company1.svg" alt="company two" />
-          </li>
-          <li>
-            <img src="./image/studio/foster.svg" alt="foster company" />
-          </li>
-          <li>
-            <img src="./image/studio/brand.svg" alt="brand company" />
-          </li>
-          <li>
-            <img src="./image/studio/company2.svg" alt="company three" />
-          </li>
-        </ul>
-      </section>
+      <!-- <section class="clients">
+        <div class="container">
+          <h2 class="clients-title">Постоянные клиенты</h2>
+          <ul class="list">
+            <li>
+              <img src="./image/studio/yaco.svg" alt="yaco company" />
+            </li>
+            <li>
+              <img src="./image/studio/company.svg" alt="company one" />
+            </li>
+            <li>
+              <img src="./image/studio/company1.svg" alt="company two" />
+            </li>
+            <li>
+              <img src="./image/studio/foster.svg" alt="foster company" />
+            </li>
+            <li>
+              <img src="./image/studio/brand.svg" alt="brand company" />
+            </li>
+            <li>
+              <img src="./image/studio/company2.svg" alt="company three" />
+            </li>
+          </ul>
+        </div>
+      </section> -->
     </main>
 
     <footer>
-      <a class="logo-link foot" href="./index.html"><span class="logo">Web</span>Studio</a>
-      <address class="address">
-        г. Киев, пр-т Леси Украинки, 26 <br />
-        <a class="foot__nav" href="mailto:info@devstudio.com">info@devstudio.com</a> <br />
-        <a class="foot__nav" href="tel:+380961111111">+38096 111 11 11</a>
-      </address>
+      <div class="container">
+        <a class="logo-link foot" href="./index.html"><span class="logo">Web</span>Studio</a>
+        <address class="address">
+          г. Киев, пр-т Леси Украинки, 26 <br />
+          <a class="foot__nav" href="mailto:info@devstudio.com">info@devstudio.com</a> <br />
+          <a class="foot__nav" href="tel:+380961111111">+38096 111 11 11</a>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
