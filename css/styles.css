@@ -156,12 +156,13 @@ footer {
 }
 
 .team .our-team,
-.our-doing.title {
+.our-doing-title {
   margin-top: 0;
   margin-bottom: 50px;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.7;
+  text-align: center;
 }
 
 /* Наша команда */
@@ -193,17 +194,24 @@ footer {
 
 /* Portfoilo */
 /* Filer */
-.filter input {
+.filter button {
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding: 6px 22px;
   background-color: var(--background-primary-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   font-family: inherit;
+  text-align: center;
+  border: 0;
+  border-radius: 4px;
 }
 
-.filter input:focus,
-.filter input:hover {
+.filter button:focus,
+.filter button:hover {
   background-color: var(--accent-color);
+  color: var(--white);
 }
 
 .examples h2 {
