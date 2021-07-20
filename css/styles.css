@@ -167,6 +167,14 @@ footer {
   /* visibility: hidden; */
 }
 
+.advantages-list {
+  display: flex;
+}
+
+.advantages-list .item + .item {
+  margin-left: 30px;
+}
+
 .advantages-list h3 {
   margin-top: 0;
   margin-bottom: 10px;
@@ -182,6 +190,14 @@ footer {
 
 .our-doing {
   padding-bottom: 94px;
+}
+
+.doing-image {
+  display: flex;
+}
+
+.doing-image .item + .item {
+  margin-left: 30px;
 }
 
 .team .our-team,
