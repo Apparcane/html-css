@@ -218,6 +218,21 @@ footer {
   padding: 94px 0;
 }
 
+.team-list {
+  display: flex;
+}
+
+.team-list .item {
+  background-color: var(--white);
+  text-align: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-list .item + .item {
+  margin-left: 30px;
+}
+
 .team img {
   margin-top: 0;
   margin-bottom: 30px;
@@ -233,7 +248,7 @@ footer {
 
 .team p {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 30px;
   color: var(--text-color);
 }
 
