@@ -267,6 +267,16 @@ footer {
 
 /* Portfoilo */
 /* Filer */
+
+.filter {
+  display: flex;
+  justify-content: center;
+}
+
+.filter .item + .item {
+  margin-left: 8px;
+}
+
 .filter button {
   margin-top: 0;
   margin-bottom: 50px;
@@ -287,7 +297,34 @@ footer {
   color: var(--white);
 }
 
+.examples {
+  padding-bottom: 94px;
+}
+
+.example-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-bottom: -15px;
+}
+
+.example-list .item {
+  width: calc((100% - 2 * 30px) / 3);
+  border: 1px solid #eeeeee;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.example-list .item img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
 .examples h2 {
+  margin-top: 0;
+  margin-bottom: 4px;
+  margin-left: 24px;
+
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -295,6 +332,10 @@ footer {
 }
 
 .examples p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  margin-left: 24px;
+
   font-size: 16px;
   line-height: 1.87;
   color: var(--text-color);
