@@ -265,6 +265,34 @@ footer {
   color: var(--text-color);
 }
 
+.clients {
+  padding-top: 94px;
+}
+
+.clients-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.client-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 94px;
+}
+
+.client-list .item {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  padding-top: 24px;
+  text-align: center;
+}
+
+.client-list .item + .item {
+  margin-left: 30px;
+}
+
 /* Portfoilo */
 /* Filer */
 
