@@ -39,6 +39,20 @@ body {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* Header */
 .main-nav {
   display: flex;
@@ -85,26 +99,35 @@ body {
 }
 
 .contacts .nav__link + .nav__link {
-  margin-left: 10px;
+  margin-left: 30px;
 }
 
-.nav__link.mail::before {
+.nav__link .icon {
+  margin-right: 10px;
+  fill: #757575;
+}
+
+.nav__link:hover .icon {
+  fill: var(--accent-color);
+}
+
+/* .nav__link.mail::before {
   content: "";
   display: inline-flex;
   margin-right: 10px;
   width: 16px;
   height: 12px;
   background-image: url(../image/icon/message.svg);
-}
+} */
 
-.nav__link.number::before {
+/* .nav__link.number::before {
   content: "";
   display: inline-flex;
   margin-right: 10px;
   width: 10px;
   height: 16px;
   background-image: url(../image/icon/smartphone.svg);
-}
+} */
 
 .nav__link:focus,
 .nav__link:hover {
@@ -167,12 +190,15 @@ footer {
 
 .foot-social .link {
   display: block;
+  padding-top: 12px;
+  text-align: center;
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: center;
+  fill: var(--white);
 }
 
 .foot-social .item + .item {
@@ -184,7 +210,7 @@ footer {
   background-color: var(--accent-color);
 }
 
-.foot-social .instagram {
+/* .foot-social .instagram {
   background-image: url("../image/social/footer/instagram.svg");
 }
 
@@ -198,7 +224,7 @@ footer {
 
 .foot-social .linkedin {
   background-image: url("../image/social/footer/linkedin.svg");
-}
+} */
 
 /* index */
 /* Hero */
@@ -269,12 +295,20 @@ footer {
   margin-left: 30px;
 }
 
-.advantages-list .item::before {
+.advantages-list .icon {
+  height: 120px;
+  text-align: center;
+  margin-bottom: 30px;
+  padding-top: 25px;
+  background-color: var(--background-primary-color);
+}
+
+/* .advantages-list .item::before {
   display: block;
   content: "";
   height: 120px;
   margin-bottom: 30px;
-  /* background-size: contain; */
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--background-primary-color);
@@ -294,7 +328,7 @@ footer {
 
 .advantages-list .icon-astronaut::before {
   background-image: url("../image/studio/astronaut.svg");
-}
+} */
 
 .advantages-list h3 {
   margin-top: 0;
@@ -389,11 +423,24 @@ footer {
   margin-left: 10px;
 }
 
-.team-social .link {
+.team-social .icon {
+  width: 44px;
+  height: 44px;
+  padding-top: 12px;
+  text-align: center;
+  fill: #afb1b8;
+  border-radius: 50%;
+}
+.team-social .icon:hover {
+  background-color: var(--accent-color);
+  fill: var(--white);
+}
+
+/* .team-social .link {
   display: block;
   width: 44px;
   height: 44px;
-  /* cursor: pointer; */
+  cursor: pointer;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -412,7 +459,7 @@ footer {
 
 .team-social .linkedin {
   background-image: url("../image/social/team/linkedin.svg");
-}
+} */
 
 /* Постоянные Клиенты */
 .clients {
@@ -435,8 +482,18 @@ footer {
   border-radius: 4px;
   width: 170px;
   height: 92px;
-  padding-top: 24px;
   text-align: center;
+}
+
+.client-list .item:hover,
+.client-list .item:hover .icon {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.client-list .item .icon {
+  padding-top: 16px;
+  fill: #afb1b8;
 }
 
 .client-list .item + .item {
@@ -448,6 +505,7 @@ footer {
 
 .filter {
   display: flex;
+  padding-top: 94px;
   justify-content: center;
 }
 
@@ -492,6 +550,10 @@ footer {
   border: 1px solid #eeeeee;
   margin-right: 15px;
   margin-bottom: 15px;
+}
+
+.example-list .item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .example-list .item img {

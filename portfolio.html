@@ -20,10 +20,10 @@
         <nav>
           <ul class="ul-nav list">
             <li class="item">
-              <a class="nav__link" href="./index.html">Студия</a>
+              <a class="nav__link active" href="./index.html">Студия</a>
             </li>
             <li class="item">
-              <a class="nav__link active" href="./portfolio.html">Портфолио</a>
+              <a class="nav__link" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="item">
               <a class="nav__link" href="./contacts.html">Контакты</a>
@@ -32,8 +32,18 @@
         </nav>
 
         <address class="contacts">
-          <a class="nav__link mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-          <a class="nav__link number" href="tel:+380961111111">+38 096 111 11 11</a>
+          <a class="nav__link mail" href="mailto:info@devstudio.com">
+            <svg class="icon" width="16" height="12">
+              <use href="./image/icons-pack.svg#icon-message"></use>
+            </svg>
+            info@devstudio.com
+          </a>
+          <a class="nav__link number" href="tel:+380961111111">
+            <svg class="icon" width="10" height="16">
+              <use href="./image/icons-pack.svg#icon-smartphone"></use>
+            </svg>
+            +38 096 111 11 11
+          </a>
         </address>
       </div>
     </header>
@@ -41,7 +51,7 @@
     <main>
       <section class="filters">
         <div class="container">
-          <h1>Портфолио</h1>
+          <h1 class="visually-hidden">Портфолио</h1>
           <ul class="filter list">
             <li class="item"><button type="button" value="Все">Все</button></li>
             <li class="item"><button type="button" value="Веб-сайты">Веб-сайты</button></li>
@@ -209,16 +219,44 @@
           <h2 class="title">присоединяйтесь</h2>
           <ul class="foot-social list">
             <li class="item">
-              <a class="link instagram" href="" aria-label="Instagram">Instagram</a>
+              <a class="link instagram" href="" aria-label="Instagram">
+                <div class="icon">
+                  <svg height="20" width="20">
+                    <use href="./image/icons-pack.svg#icon-instagram"></use>
+                  </svg>
+                </div>
+                Instagram
+              </a>
             </li>
             <li class="item">
-              <a class="link twitter" href="" aria-label="Twitter">Twitter</a>
+              <a class="link twitter" href="" aria-label="Twitter">
+                <div class="icon">
+                  <svg height="20" width="20">
+                    <use href="./image/icons-pack.svg#icon-twitter"></use>
+                  </svg>
+                </div>
+                Twitter
+              </a>
             </li>
             <li class="item">
-              <a class="link facebook" href="" aria-label="Facebook">Facebook</a>
+              <a class="link facebook" href="" aria-label="Facebook">
+                <div class="icon">
+                  <svg height="20" width="20">
+                    <use href="./image/icons-pack.svg#icon-facebook"></use>
+                  </svg>
+                </div>
+                Facebook
+              </a>
             </li>
             <li class="item">
-              <a class="link linkedin" href="" aria-label="LinkedIn">LinkedIn</a>
+              <a class="link linkedin" href="" aria-label="LinkedIn">
+                <div class="icon">
+                  <svg height="20" width="20">
+                    <use href="./image/icons-pack.svg#icon-linkedin"></use>
+                  </svg>
+                </div>
+                LinkedIn
+              </a>
             </li>
           </ul>
         </div>
