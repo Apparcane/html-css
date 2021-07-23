@@ -558,11 +558,10 @@ footer {
 
 .example-list .item img {
   width: 100%;
-  margin-bottom: 20px;
 }
 
 .examples h2 {
-  margin-top: 0;
+  margin-top: 20px;
   margin-bottom: 4px;
   margin-left: 24px;
 
@@ -572,7 +571,7 @@ footer {
   color: var(--primary-text-color);
 }
 
-.examples p {
+.examples .description {
   margin-top: 0;
   margin-bottom: 20px;
   margin-left: 24px;
@@ -580,4 +579,38 @@ footer {
   font-size: 16px;
   line-height: 1.87;
   color: var(--text-color);
+}
+
+.thumb {
+  position: relative;
+}
+
+.thumb::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  opacity: 0;
+}
+
+.overlay {
+  position: absolute;
+
+  top: 63px;
+  left: 24px;
+  right: 24px;
+
+  margin: 0;
+  color: var(--white);
+  opacity: 0;
+
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+}
+
+.example-list .item:hover ::before,
+.example-list .item:hover .overlay {
+  opacity: 1;
 }
