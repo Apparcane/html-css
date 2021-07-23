@@ -111,24 +111,6 @@ body {
   fill: var(--accent-color);
 }
 
-/* .nav__link.mail::before {
-  content: "";
-  display: inline-flex;
-  margin-right: 10px;
-  width: 16px;
-  height: 12px;
-  background-image: url(../image/icon/message.svg);
-} */
-
-/* .nav__link.number::before {
-  content: "";
-  display: inline-flex;
-  margin-right: 10px;
-  width: 10px;
-  height: 16px;
-  background-image: url(../image/icon/smartphone.svg);
-} */
-
 .nav__link:focus,
 .nav__link:hover {
   color: var(--accent-color);
@@ -225,23 +207,7 @@ footer {
   background-color: var(--accent-color);
 }
 
-/* .foot-social .instagram {
-  background-image: url("../image/social/footer/instagram.svg");
-}
-
-.foot-social .twitter {
-  background-image: url("../image/social/footer/twitter.svg");
-}
-
-.foot-social .facebook {
-  background-image: url("../image/social/footer/facebook.svg");
-}
-
-.foot-social .linkedin {
-  background-image: url("../image/social/footer/linkedin.svg");
-} */
-
-/* index */
+/* index.html */
 /* Hero */
 .hero {
   margin-right: auto;
@@ -289,6 +255,33 @@ footer {
   font-size: 16px;
   line-height: 1.9;
   text-decoration: none;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  min-height: 581px;
+  min-width: 528px;
+  padding: 15px;
+
+  background-color: #fff;
 }
 
 /* Преимущества */
