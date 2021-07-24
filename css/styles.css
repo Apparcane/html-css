@@ -7,6 +7,7 @@
   --background-primary-color: #f5f4fa;
   --background-sec-color: #e5e5e5;
   --background-footer: #2f303a;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* 
@@ -125,7 +126,7 @@ body {
   content: "";
 
   position: absolute;
-  top: 95%;
+  bottom: 0;
   left: 0;
 
   width: 100%;
@@ -606,16 +607,26 @@ footer {
 
 .thumb {
   position: relative;
+  overflow: hidden;
 }
 
 .thumb::before {
   content: "";
   position: absolute;
+  top: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
   opacity: 0;
+
+  transform: translateY(100%);
+
+  transition-property: opacity, transform;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 }
+
+/* cubic-bezier(0.4, 0, 0.2, 1) */
 
 .overlay {
   position: absolute;
@@ -629,9 +640,16 @@ footer {
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.03em;
+
+  transform: translateY(100%);
+
+  transition-property: opacity, transform;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 }
 
 .example-list .item:hover ::before,
 .example-list .item:hover .overlay {
   opacity: 1;
+  transform: translateY(0);
 }
