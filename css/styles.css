@@ -297,6 +297,8 @@ footer {
 
   background-color: #fff;
 
+  fill: transparent;
+
   transition: transform 250ms var(--timing-function);
 }
 
@@ -305,11 +307,19 @@ footer {
   top: 8px;
   right: 8px;
   padding: 0;
-  width: 30px;
-  height: 30px;
-  border: none;
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
   background-color: transparent;
   cursor: pointer;
+  fill: black;
+  text-align: center;
+}
+
+.modal-close:focus,
+.modal-close:hover {
+  fill: var(--accent-color);
 }
 
 /* Преимущества */
