@@ -213,6 +213,51 @@ footer {
   background-color: var(--accent-color);
 }
 
+.mailing {
+  padding-left: 94px;
+}
+
+.mailing .title {
+  margin: 0;
+  margin-bottom: 20px;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+}
+
+.field {
+  width: 300px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  background-color: transparent;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.subscribe {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  border: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 4px;
+  background-color: var(--accent-color);
+
+  color: var(--white);
+}
+
+.subscribe .icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+
 /* index.html */
 /* Hero */
 .hero {
