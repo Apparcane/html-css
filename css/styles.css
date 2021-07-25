@@ -238,6 +238,13 @@ footer {
   border-radius: 4px;
 }
 
+.mailing .field:hover,
+.mailing .field:focus {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+  outline: none;
+}
+
 .subscribe {
   display: inline-flex;
   justify-content: center;
