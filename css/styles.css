@@ -225,14 +225,15 @@ footer {
   align-items: center;
 }
 
-.field {
+.mailing .field {
+  margin: 0;
+  padding: 15px 16px;
   width: 300px;
   height: 50px;
-  margin: 0;
-  padding: 0;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   background-color: transparent;
+  color: var(--white);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
@@ -248,8 +249,14 @@ footer {
   padding: 0;
   border-radius: 4px;
   background-color: var(--accent-color);
-
   color: var(--white);
+  cursor: pointer;
+  transition: background-color 250ms var(--timing-function);
+}
+
+.subscribe:hover,
+.subscribe:focus {
+  background-color: #188ce8;
 }
 
 .subscribe .icon {
@@ -360,11 +367,130 @@ footer {
   cursor: pointer;
   fill: black;
   text-align: center;
+  transition: fill 250ms var(--timing-function);
 }
 
 .modal-close:focus,
 .modal-close:hover {
   fill: var(--accent-color);
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+.modal-form .form-title {
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.modal .modal-form .submit {
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  color: var(--white);
+  background-color: var(--accent-color);
+  transition: background-color 250ms var(--timing-function);
+}
+
+.modal .modal-form .submit:focus,
+.modal .modal-form .submit:hover {
+  background-color: #188ce8;
+}
+
+.modal-form .group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.modal-form .group .form-field {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 0;
+  border: none;
+}
+
+.group label {
+  color: var(--text-color);
+  margin-bottom: 4px;
+}
+
+.group .area {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color 250ms var(--timing-function);
+}
+
+.form-field .form-input {
+  height: 40px;
+  width: 100%;
+  padding: 11px 12px;
+  padding-left: 42px;
+}
+
+.form-field .form-input:hover,
+.form-field .form-input:focus {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+  outline: none;
+}
+
+.form-input:hover + .icon,
+.form-input:focus + .icon {
+  color: var(--accent-color);
+}
+
+.modal-form .form-field .icon {
+  transition: color 250ms var(--timing-function);
+  fill: currentColor;
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+}
+
+.group .comments {
+  margin-bottom: 25px;
+}
+
+.comments .comment {
+  width: 100%;
+  resize: none;
+  padding: 12px 16px;
+}
+
+.comments .comment:hover,
+.comments .comment:focus {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+  outline: none;
+}
+
+.policy {
+  margin-bottom: 30px;
+  padding-left: 10px;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.policy .box {
+  margin-right: 9px;
+}
+
+.policy-link {
+  text-decoration-line: underline;
+  color: var(--accent-color);
 }
 
 /* Преимущества */
