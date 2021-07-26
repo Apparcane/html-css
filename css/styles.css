@@ -428,7 +428,7 @@ footer {
   border: none;
 }
 
-.group label {
+.group .label {
   color: var(--text-color);
   margin-bottom: 4px;
 }
@@ -464,7 +464,7 @@ footer {
   position: absolute;
   top: 50%;
   left: 12px;
-  transform: translateY(-50%);
+  /* transform: translateY(-50%); */
 }
 
 .group .comments {
@@ -492,8 +492,25 @@ footer {
   letter-spacing: 0.03em;
 }
 
+.policy .chekbox {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 3px;
+  background-image: url("../image/icon/checked.svg");
+  background-size: contain;
+  background-origin: border-box;
+  transition: background-color 250ms var(--timing-function), border-color 250ms var(--timing-function);
+}
+
 .policy .box {
   margin-right: 9px;
+}
+
+.box:checked + .chekbox {
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
 }
 
 .policy-link {
