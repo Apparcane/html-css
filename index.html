@@ -15,31 +15,31 @@
   <body>
     <header>
       <div class="container main-nav">
-        <a class="logo-link" href="./index.html"><span class="logo">Web</span>Studio</a>
+        <a class="logo" href="./index.html"><span class="logo--color">Web</span>Studio</a>
 
         <nav>
-          <ul class="ul-nav list">
-            <li class="item">
-              <a class="nav__link active" href="./index.html">Студия</a>
+          <ul class="nav-list list">
+            <li class="nav-list__item">
+              <a class="nav-list__link nav__link--active" href="./index.html">Студия</a>
             </li>
-            <li class="item">
-              <a class="nav__link" href="./portfolio.html">Портфолио</a>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="item">
-              <a class="nav__link" href="">Контакты</a>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
 
         <address class="contacts">
-          <a class="nav__link mail" href="mailto:info@devstudio.com">
-            <svg class="icon" width="16" height="12">
+          <a class="contacts__link" href="mailto:info@devstudio.com">
+            <svg class="contacts__icon" width="16" height="12">
               <use href="./image/icons-pack.svg#icon-message"></use>
             </svg>
             info@devstudio.com
           </a>
-          <a class="nav__link number" href="tel:+380961111111">
-            <svg class="icon" width="10" height="16">
+          <a class="contacts__link" href="tel:+380961111111">
+            <svg class="contacts__icon" width="10" height="16">
               <use href="./image/icons-pack.svg#icon-smartphone"></use>
             </svg>
             +38 096 111 11 11
@@ -50,58 +50,61 @@
 
     <main>
       <!-- Герой -->
-      <section class="hero">
-        <h1 class="hero title">Эффективные решения<br />для вашего бизнеса</h1>
-        <button class="hero order" data-open-modal>Заказать услугу</button>
+      <section class="section">
+        <div class="hero">
+          <h1 class="hero__title">Эффективные решения<br />для вашего бизнеса</h1>
+          <button class="hero__button" data-open-modal>Заказать услугу</button>
+        </div>
 
         <!-- Модалка -->
         <div class="backdrop is-hidden" data-backdrop>
           <div class="modal">
-            <form class="modal-form js-form">
-              <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+            <form class="form js-form">
+              <h2 class="form__title">Оставьте свои данные, мы вам перезвоним</h2>
 
               <div role="group" class="group">
-                <label class="form-field">
-                  <span class="label">Имя</span>
-                  <input class="form-input area" type="text" name="name" />
-                  <svg class="icon" width="18" height="18">
+                <label class="form__field">
+                  <span class="form__label">Имя</span>
+                  <input class="form__input" type="text" name="name" />
+                  <svg class="form__icon" width="18" height="18">
                     <use href="./image/icons-pack.svg#icon-name"></use>
                   </svg>
                 </label>
 
-                <label class="form-field">
-                  <span class="label">Телефон</span>
-                  <input class="form-input area" type="tel" name="tel" />
-                  <svg class="icon" width="18" height="18">
+                <label class="form__field">
+                  <span class="form__label">Телефон</span>
+                  <input class="form__input" type="tel" name="tel" />
+                  <svg class="form__icon" width="18" height="18">
                     <use href="./image/icons-pack.svg#icon-tel"></use>
                   </svg>
                 </label>
 
-                <label class="form-field">
-                  <span class="label">Почта</span>
-                  <input class="form-input area" type="email" name="mail" />
-                  <svg class="icon" width="18" height="18">
+                <label class="form__field">
+                  <span class="form__label">Почта</span>
+                  <input class="form__input" type="email" name="mail" />
+                  <svg class="form__icon" width="18" height="18">
                     <use href="./image/icons-pack.svg#icon-mail"></use>
                   </svg>
                 </label>
 
-                <label class="comments">
-                  <sapn class="label">Комментарий</sapn>
-                  <textarea class="comment area" name="comment" rows="10" placeholder="Введите текст"></textarea>
+                <label class="form__comments">
+                  <sapn class="form__label">Комментарий</sapn>
+                  <textarea class="form__textarea" name="comment" rows="10" placeholder="Введите текст"></textarea>
                 </label>
 
                 <label class="policy">
                   <!-- visually-hidden -->
-                  <input class="box visually-hidden" type="checkbox" name="policy" />
-                  <span class="chekbox"></span>
-                  <span class="label">Соглашаюсь с рассылкой и принимаю</span>
-                  <a class="policy-link" href="">Условия договора</a>
+                  <input class="policy__box visually-hidden" type="checkbox" name="policy" />
+                  <span class="policy__chekbox"></span>
+                  <span class="policy__label">Соглашаюсь с рассылкой и принимаю</span>
+                  <a class="policy__link" href="">Условия договора</a>
                 </label>
               </div>
 
-              <button type="submit" class="submit">Отправить</button>
+              <button type="submit" class="form__button">Отправить</button>
             </form>
-            <button class="modal-close" data-close-modal>
+
+            <button class="modal__close" data-close-modal>
               <svg width="30" height="30">
                 <use href="./image/icons-pack.svg#icon-close"></use>
               </svg>
@@ -436,19 +439,19 @@
 
     <footer>
       <div class="footer container">
-        <div class="footer-address">
-          <a class="logo-link foot" href="./index.html"><span class="logo">Web</span>Studio</a>
+        <div class="footer__address">
+          <a class="logo footer__logo" href="./index.html"><span class="logo--color">Web</span>Studio</a>
           <address class="address">
             г. Киев, пр-т Леси Украинки, 26 <br />
-            <a class="foot__nav" href="mailto:info@devstudio.com">info@devstudio.com</a> <br />
-            <a class="foot__nav" href="tel:+380961111111">+38096 111 11 11</a>
+            <a class="address__link" href="mailto:info@devstudio.com">info@devstudio.com</a> <br />
+            <a class="address__link" href="tel:+380961111111">+38096 111 11 11</a>
           </address>
         </div>
         <div class="footer-social">
-          <h2 class="title">присоединяйтесь</h2>
-          <ul class="foot-social list">
-            <li class="item">
-              <a class="link instagram" href="" aria-label="Instagram">
+          <h2 class="footer-social__title">присоединяйтесь</h2>
+          <ul class="footer-social__list list">
+            <li class="footer-social__item">
+              <a class="footer-social__link" href="" aria-label="Instagram">
                 <div class="icon">
                   <svg height="20" width="20">
                     <use href="./image/icons-pack.svg#icon-instagram"></use>
@@ -457,8 +460,8 @@
                 Instagram
               </a>
             </li>
-            <li class="item">
-              <a class="link twitter" href="" aria-label="Twitter">
+            <li class="footer-social__item">
+              <a class="footer-social__link" href="" aria-label="Twitter">
                 <div class="icon">
                   <svg height="20" width="20">
                     <use href="./image/icons-pack.svg#icon-twitter"></use>
@@ -467,8 +470,8 @@
                 Twitter
               </a>
             </li>
-            <li class="item">
-              <a class="link facebook" href="" aria-label="Facebook">
+            <li class="footer-social__item">
+              <a class="footer-social__link" href="" aria-label="Facebook">
                 <div class="icon">
                   <svg height="20" width="20">
                     <use href="./image/icons-pack.svg#icon-facebook"></use>
@@ -477,8 +480,8 @@
                 Facebook
               </a>
             </li>
-            <li class="item">
-              <a class="link linkedin" href="" aria-label="LinkedIn">
+            <li class="footer-social__item">
+              <a class="footer-social__link" href="" aria-label="LinkedIn">
                 <div class="icon">
                   <svg height="20" width="20">
                     <use href="./image/icons-pack.svg#icon-linkedin"></use>
@@ -489,12 +492,12 @@
             </li>
           </ul>
         </div>
-        <form class="mailing js-form">
-          <h3 class="title">Подпишитесь на рассылку</h3>
-          <input class="field" type="email" placeholder="E-mail" />
-          <button type="submit" class="subscribe">
+        <form class="footer-mailing js-form">
+          <h3 class="footer-mailing__title">Подпишитесь на рассылку</h3>
+          <input class="footer-mailing__field" type="email" placeholder="E-mail" />
+          <button type="submit" class="footer-button">
             Подписаться
-            <svg class="icon">
+            <svg class="footer-button__icon">
               <use href="./image/icons-pack.svg#icon-send"></use>
             </svg>
           </button>
