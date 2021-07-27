@@ -456,7 +456,7 @@
     <!-- Модалка -->
     <div class="backdrop is-hidden" data-backdrop>
       <div class="modal">
-        <form class="form js-form">
+        <form class="form">
           <h2 class="form__title">Оставьте свои данные, мы вам перезвоним</h2>
 
           <div role="group" class="group">
@@ -526,10 +526,12 @@
 
       // Отправка данных с форма в консоль
       (() => {
-        document.querySelector(".js-form").addEventListener("submit", (e) => {
+        document.querySelector(".form").addEventListener("submit", (e) => {
           e.preventDefault();
 
           new FormData(e.currentTarget).forEach((value, name) => console.log(`${name}: ${value}`));
+
+          e.currentTarget.reset();
         });
       })();
     </script>
