@@ -685,7 +685,7 @@ footer {
   padding-top: 94px;
 }
 
-.clients-title {
+.clients__title {
   text-align: center;
   margin-bottom: 50px;
 }
@@ -696,7 +696,7 @@ footer {
   margin-bottom: 94px;
 }
 
-.client-list .item {
+.client-list__item {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   width: 170px;
@@ -704,26 +704,26 @@ footer {
   text-align: center;
 }
 
-.client-list .item,
-.client-list .item .icon {
+.client-list__item,
+.client-list__icon {
   transition: border-color 250ms var(--timing-function), fill 250ms var(--timing-function);
 }
 
-.client-list .item:focus,
-.client-list .item:focus .icon,
-.client-list .item:hover,
-.client-list .item:hover .icon {
+.client-list__item:focus,
+.client-list__item:focus .client-list__icon,
+.client-list__item:hover,
+.client-list__item:hover .client-list__icon {
   border-color: var(--accent-color);
   fill: var(--accent-color);
 }
 
-.client-list .item .icon {
+.client-list__icon {
   padding-top: 16px;
   fill: #afb1b8;
 }
 
-.client-list .item + .item {
-  margin-left: 30px;
+.client-list__item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* Portfoilo */
