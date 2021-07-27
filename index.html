@@ -52,107 +52,51 @@
       <!-- Герой -->
       <section class="section">
         <div class="hero">
-          <h1 class="hero__title">Эффективные решения<br />для вашего бизнеса</h1>
+          <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button class="hero__button" data-open-modal>Заказать услугу</button>
-        </div>
-
-        <!-- Модалка -->
-        <div class="backdrop is-hidden" data-backdrop>
-          <div class="modal">
-            <form class="form js-form">
-              <h2 class="form__title">Оставьте свои данные, мы вам перезвоним</h2>
-
-              <div role="group" class="group">
-                <label class="form__field">
-                  <span class="form__label">Имя</span>
-                  <input class="form__input" type="text" name="name" />
-                  <svg class="form__icon" width="18" height="18">
-                    <use href="./image/icons-pack.svg#icon-name"></use>
-                  </svg>
-                </label>
-
-                <label class="form__field">
-                  <span class="form__label">Телефон</span>
-                  <input class="form__input" type="tel" name="tel" />
-                  <svg class="form__icon" width="18" height="18">
-                    <use href="./image/icons-pack.svg#icon-tel"></use>
-                  </svg>
-                </label>
-
-                <label class="form__field">
-                  <span class="form__label">Почта</span>
-                  <input class="form__input" type="email" name="mail" />
-                  <svg class="form__icon" width="18" height="18">
-                    <use href="./image/icons-pack.svg#icon-mail"></use>
-                  </svg>
-                </label>
-
-                <label class="form__comments">
-                  <sapn class="form__label">Комментарий</sapn>
-                  <textarea class="form__textarea" name="comment" rows="10" placeholder="Введите текст"></textarea>
-                </label>
-
-                <label class="policy">
-                  <!-- visually-hidden -->
-                  <input class="policy__box visually-hidden" type="checkbox" name="policy" />
-                  <span class="policy__chekbox"></span>
-                  <span class="policy__label">Соглашаюсь с рассылкой и принимаю</span>
-                  <a class="policy__link" href="">Условия договора</a>
-                </label>
-              </div>
-
-              <button type="submit" class="form__button">Отправить</button>
-            </form>
-
-            <button class="modal__close" data-close-modal>
-              <svg width="30" height="30">
-                <use href="./image/icons-pack.svg#icon-close"></use>
-              </svg>
-            </button>
-          </div>
         </div>
       </section>
 
       <!-- Преимущества -->
       <section class="section">
         <div class="section__advanteges container">
-          <h2 class="section__title visually-hidden">Преимущества</h2>
+          <h2 class="visually-hidden">Преимущества</h2>
           <ul class="advantages list">
             <li class="advantages__item">
-              <div class="advantages__icon">
+              <div class="advantages__item-icon">
                 <svg height="70" width="70">
                   <use href="./image/icons-pack.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="advantages__title">Внимание к деталям</h3>
-              <p class="advantages__description">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+              <h3 class="advantages__item-title">Внимание к деталям</h3>
+              <p class="advantages__item-description">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
             </li>
             <li class="advantages__item">
-              <div class="advantages__icon">
+              <div class="advantages__item-icon">
                 <svg height="70" width="70">
                   <use href="./image/icons-pack.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="advantages__title">Пунктуальность</h3>
-              <p class="advantages__description">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+              <h3 class="advantages__item-title">Пунктуальность</h3>
+              <p class="advantages__item-description">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
             </li>
             <li class="advantages__item">
-              <div class="advantages__icon">
+              <div class="advantages__item-icon">
                 <svg height="70" width="70">
                   <use href="./image/icons-pack.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="advantages__title">Планирование</h3>
-              <p class="advantages__description">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+              <h3 class="advantages__item-title">Планирование</h3>
+              <p class="advantages__item-description">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
             </li>
             <li class="advantages__item">
-              <div class="advantages__icon">
+              <div class="advantages__item-icon">
                 <svg height="70" width="70">
                   <use href="./image/icons-pack.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="advantages__title">Современные технологии</h3>
-              <p class="advantages__description">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+              <h3 class="advantages__item-title">Современные технологии</h3>
+              <p class="advantages__item-description">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
             </li>
           </ul>
         </div>
@@ -198,7 +142,7 @@
                     </a>
                   </li>
                   <li class="team-social__item">
-                    <a class="team-social__link" href="" aria-label="Twitter">
+                    <a class="team-social__item-link" href="" aria-label="Twitter">
                       <div class="team-social__icon">
                         <svg height="20" width="20">
                           <use href="./image/icons-pack.svg#icon-twitter"></use>
@@ -508,6 +452,62 @@
         </form>
       </div>
     </footer>
+
+    <!-- Модалка -->
+    <div class="backdrop is-hidden" data-backdrop>
+      <div class="modal">
+        <form class="form js-form">
+          <h2 class="form__title">Оставьте свои данные, мы вам перезвоним</h2>
+
+          <div role="group" class="group">
+            <label class="form__field">
+              <span class="form__label">Имя</span>
+              <input class="form__input" type="text" name="name" />
+              <svg class="form__icon" width="18" height="18">
+                <use href="./image/icons-pack.svg#icon-name"></use>
+              </svg>
+            </label>
+
+            <label class="form__field">
+              <span class="form__label">Телефон</span>
+              <input class="form__input" type="tel" name="tel" />
+              <svg class="form__icon" width="18" height="18">
+                <use href="./image/icons-pack.svg#icon-tel"></use>
+              </svg>
+            </label>
+
+            <label class="form__field">
+              <span class="form__label">Почта</span>
+              <input class="form__input" type="email" name="mail" />
+              <svg class="form__icon" width="18" height="18">
+                <use href="./image/icons-pack.svg#icon-mail"></use>
+              </svg>
+            </label>
+
+            <label class="form__comments">
+              <sapn class="form__label">Комментарий</sapn>
+              <textarea class="form__textarea" name="comment" rows="10" placeholder="Введите текст"></textarea>
+            </label>
+
+            <label class="policy">
+              <!-- visually-hidden -->
+              <input class="policy__box visually-hidden" type="checkbox" name="policy" />
+              <span class="policy__chekbox"></span>
+              <span class="policy__label">Соглашаюсь с рассылкой и принимаю</span>
+              <a class="policy__link" href="">Условия договора</a>
+            </label>
+          </div>
+
+          <button type="submit" class="form__button">Отправить</button>
+        </form>
+
+        <button class="modal__close" data-close-modal>
+          <svg width="30" height="30">
+            <use href="./image/icons-pack.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
 
     <script>
       // Модалка
