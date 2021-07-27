@@ -590,16 +590,16 @@ footer {
   padding-bottom: 94px;
 }
 
-.doing-image {
+.our-doing__images {
   display: flex;
 }
 
-.doing-image .item + .item {
-  margin-left: 30px;
+.our-doing__item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team .our-team,
-.our-doing-title {
+.our-doing__title {
   margin-top: 0;
   margin-bottom: 50px;
   font-weight: bold;
