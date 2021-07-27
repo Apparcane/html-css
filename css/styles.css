@@ -297,10 +297,10 @@ footer {
 
 /* index.html */
 
-.section {
+/* .section {
   margin-right: auto;
   margin-left: auto;
-}
+} */
 
 /* Hero */
 .hero {
@@ -598,7 +598,7 @@ footer {
   margin-right: 30px;
 }
 
-.team .our-team,
+.team__header,
 .our-doing__title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -620,28 +620,25 @@ footer {
   display: flex;
 }
 
-.team-list > .item {
+.team-list__item {
   background-color: var(--white);
   text-align: center;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-list .item img {
+.team-list__image {
   width: calc((100% - 90) / 4);
   width: 262.5px;
-}
-
-.team-list > .item + .item {
-  margin-left: 30px;
-}
-
-.team img {
   margin-top: 0;
   margin-bottom: 30px;
 }
 
-.team h3 {
+.team-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-list__name {
   margin-top: 0;
   margin-bottom: 10px;
   font-weight: 500;
@@ -649,7 +646,7 @@ footer {
   line-height: 1.19;
 }
 
-.team p {
+.team-list__pos {
   margin-top: 0;
   margin-bottom: 16px;
   color: var(--text-color);
@@ -662,11 +659,11 @@ footer {
   margin-bottom: 30px;
 }
 
-.team-social > .item + .item {
-  margin-left: 10px;
+.team-social__item:not(:last-child) {
+  margin-right: 10px;
 }
 
-.team-social .icon {
+.team-social__icon {
   width: 44px;
   height: 44px;
   padding-top: 12px;
@@ -677,8 +674,8 @@ footer {
   transition: background-color 250ms var(--timing-function), fill 250ms var(--timing-function);
 }
 
-.team-social .icon:focus,
-.team-social .icon:hover {
+.team-social__icon:focus,
+.team-social__icon:hover {
   background-color: var(--accent-color);
   fill: var(--white);
 }
