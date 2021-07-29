@@ -826,9 +826,10 @@ footer {
 
   transform: translateY(100%);
 
-  transition-property: opacity, transform;
+  transition: opacity 250ms var(--timing-function), transform 250ms var(--timing-function);
+  /* transition-property: opacity, transform;
   transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
+  transition-timing-function: var(--timing-function); */
 }
 
 /* cubic-bezier(0.4, 0, 0.2, 1) */
@@ -849,9 +850,10 @@ footer {
 
   transform: translateY(100%);
 
-  transition-property: opacity, transform;
+  transition: opacity 250ms var(--timing-function), transform 250ms var(--timing-function);
+  /* transition-property: opacity, transform;
   transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
+  transition-timing-function: var(--timing-function); */
 }
 
 .overlay__text {
