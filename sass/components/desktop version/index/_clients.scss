@@ -1,45 +1,35 @@
 .clients {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 94px;
 }
 
 .clients__title {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .client-list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  margin: -15px;
+  margin-bottom: 94px;
 }
 
 .client-list__item {
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  margin: 15px;
+  width: 170px;
   height: 92px;
   text-align: center;
 
   transition: border-color 250ms $timing-function, fill 250ms $timing-function;
 
-  @media screen and (min-width: 480px) {
-    width: calc((100% - 4 * 15px) / 2);
-  }
-
-  @media screen and (min-width: 780px) {
-    width: calc((100% - 6 * 15px) / 3);
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: calc((100% - 12 * 15px) / 6);
-  }
-
   &:focus,
   &:hover {
     border-color: $accent-color;
     fill: $accent-color;
+  }
+
+  &:not(:last-child) {
+    margin-right: 30px;
   }
 }
 

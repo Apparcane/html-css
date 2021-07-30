@@ -1,50 +1,21 @@
 .main-nav {
   display: flex;
-  position: relative;
   align-items: center;
-  width: 100%;
-  padding-top: 16px;
-  padding-bottom: 16px;
-
-  height: 60px;
-  @media screen and (min-width: 768px) {
-    height: 80px;
-  }
 }
 
 .logo {
+  margin-right: 93px;
+
   color: #000000;
-  // font-size: 26px;
+  font-size: 26px;
   font-family: Raleway, serif;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
   &--color {
     color: $accent-color;
   }
-
-  @media screen and (min-width: 768px) {
-    margin-right: 88px;
-  }
-
-  @media sreen and (min-width: 1200px) {
-    font-size: 26px;
-  }
-}
-
-.menu {
-  display: none;
-  width: 100%;
-
-  @media (min-width: 768px) {
-    display: flex;
-    align-items: center;
-  }
-}
-
-.menu-button {
-  display: none;
 }
 
 .nav-list {
@@ -56,7 +27,7 @@
 }
 
 .nav-list__link {
-  display: flex;
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
   color: $primary-text-color;
@@ -94,20 +65,7 @@
 
 .contacts {
   margin-left: auto;
-  margin-right: 0;
   font-style: normal;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  @media screen and (min-width: 768px) {
-    margin-left: auto;
-  }
-
-  @media screen and (min-width: 1200px) {
-    flex-direction: row;
-  }
 }
 
 .contacts__link {
@@ -117,28 +75,12 @@
   font-size: 14px;
   line-height: 1.14;
   text-decoration: none;
-  height: 18px;
 
   transition: color 250ms $timing-function;
 
-  @media screen and (min-width: 768px) {
-    font-size: 12px;
-    &:not(:last-child) {
-      margin-bottom: 10px;
-    }
+  &:not(:last-child) {
+    margin-right: 30px;
   }
-
-  @media screen and (min-width: 1200px) {
-    font-size: 14px;
-    &:not(:last-child) {
-      margin-bottom: 0;
-      margin-right: 30px;
-    }
-  }
-
-  // &:not(:last-child) {
-  //   margin-right: 30px;
-  // }
 
   &:focus,
   &:hover {

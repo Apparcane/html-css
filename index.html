@@ -18,34 +18,42 @@
       <div class="container main-nav">
         <a class="logo" href="./index.html"><span class="logo--color">Web</span>Studio</a>
 
-        <nav>
-          <ul class="nav-list list">
-            <li class="nav-list__item">
-              <a class="nav-list__link nav__link--active" href="./index.html">Студия</a>
-            </li>
-            <li class="nav-list__item">
-              <a class="nav-list__link" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="nav-list__item">
-              <a class="nav-list__link" href="">Контакты</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="menu" data-menu>
+          <nav>
+            <ul class="nav-list list">
+              <li class="nav-list__item">
+                <a class="nav-list__link nav__link--active" href="./index.html">Студия</a>
+              </li>
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
 
-        <address class="contacts">
-          <a class="contacts__link" href="mailto:info@devstudio.com">
-            <svg class="contacts__icon" width="16" height="12">
-              <use href="./image/icons-pack.svg#icon-message"></use>
-            </svg>
-            info@devstudio.com
-          </a>
-          <a class="contacts__link" href="tel:+380961111111">
-            <svg class="contacts__icon" width="10" height="16">
-              <use href="./image/icons-pack.svg#icon-smartphone"></use>
-            </svg>
-            +38 096 111 11 11
-          </a>
-        </address>
+          <address class="contacts">
+            <a class="contacts__link" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon" width="16" height="12">
+                <use href="./image/icons-pack.svg#icon-message"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+            <a class="contacts__link" href="tel:+380961111111">
+              <svg class="contacts__icon" width="10" height="16">
+                <use href="./image/icons-pack.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </address>
+        </div>
+        <button class="menu-button" type="button" data-menu-button>
+          <svg width="40" height="40">
+            <use class="icon-mobile-menu" href="./image/icons-pack.svg#icon-mobile-menu"></use>
+            <use class="icon-mobile-close" href="./image/icons-pack.svg#icon-mobile-close"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -443,13 +451,15 @@
         </div>
         <form class="footer-mailing js-form">
           <h3 class="footer-mailing__title">Подпишитесь на рассылку</h3>
-          <input class="footer-mailing__field" type="email" placeholder="E-mail" />
-          <button type="submit" class="footer-button">
-            Подписаться
-            <svg class="footer-button__icon">
-              <use href="./image/icons-pack.svg#icon-send"></use>
-            </svg>
-          </button>
+          <div class="footer__form">
+            <input class="footer-mailing__field" type="email" placeholder="E-mail" />
+            <button type="submit" class="footer-button">
+              Подписаться
+              <svg class="footer-button__icon">
+                <use href="./image/icons-pack.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
         </form>
       </div>
     </footer>
@@ -499,7 +509,7 @@
             </label>
           </div>
 
-          <button type="submit" class="form__button" data-close-modal>Отправить</button>
+          <button type="submit" class="form__button">Отправить</button>
         </form>
 
         <button class="modal__close" data-close-modal>
@@ -510,31 +520,8 @@
       </div>
     </div>
 
-    <script>
-      // Модалка
-      const refs = {
-        openModalBtn: document.querySelector("[data-open-modal]"),
-        closeModalBtn: document.querySelector("[data-close-modal]"),
-        backdrop: document.querySelector("[data-backdrop]"),
-      };
-
-      refs.openModalBtn.addEventListener("click", toggleModal);
-      refs.closeModalBtn.addEventListener("click", toggleModal);
-
-      function toggleModal() {
-        refs.backdrop.classList.toggle("is-hidden");
-      }
-
-      // Отправка данных с форма в консоль
-      (() => {
-        document.querySelector(".form").addEventListener("submit", (e) => {
-          e.preventDefault();
-
-          new FormData(e.currentTarget).forEach((value, name) => console.log(`${name}: ${value}`));
-
-          e.currentTarget.reset();
-        });
-      })();
-    </script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+    <!-- <script src="./js/form.js"></script> -->
   </body>
 </html>
