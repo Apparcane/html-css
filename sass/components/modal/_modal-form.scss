@@ -84,6 +84,9 @@
 
 .form__comments {
   margin-bottom: 25px;
+  @media screen and (max-width: 480px) {
+    margin-bottom: 15px;
+  }
 }
 
 .form__textarea {
@@ -94,9 +97,10 @@
   border-radius: 4px;
   transition: border-color 250ms $timing-function;
 
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 480px) {
     height: 100px;
   }
+
   &:hover,
   &:focus {
     border-color: $accent-color;
