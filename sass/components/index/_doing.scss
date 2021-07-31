@@ -7,6 +7,7 @@
 
 .our-doing__images {
   display: flex;
+  justify-content: space-evenly;
 }
 
 .our-doing__item:not(:last-child) {
