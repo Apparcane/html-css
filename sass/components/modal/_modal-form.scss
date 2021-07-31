@@ -94,6 +94,9 @@
   border-radius: 4px;
   transition: border-color 250ms $timing-function;
 
+  @media screen and (max-width: 479px) {
+    height: 100px;
+  }
   &:hover,
   &:focus {
     border-color: $accent-color;

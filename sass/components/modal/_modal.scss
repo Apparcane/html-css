@@ -35,6 +35,11 @@
   fill: transparent;
 
   transition: transform 250ms $timing-function;
+
+  @media screen and (max-width: 479px) {
+    width: 400px;
+    height: 600px;
+  }
 }
 
 .modal__close {
