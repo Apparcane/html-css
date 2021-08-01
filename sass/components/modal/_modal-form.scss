@@ -97,9 +97,9 @@
   border-radius: 4px;
   transition: border-color 250ms $timing-function;
 
-  @media screen and (max-width: 480px) {
-    height: 100px;
-  }
+  // @media screen and (max-width: 480px) {
+  //   height: 100px;
+  // }
 
   &:hover,
   &:focus {
