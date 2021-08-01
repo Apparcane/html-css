@@ -53,12 +53,14 @@
     left: 0;
     background-color: #fff;
     opacity: 0;
-    transform: translateY(-150%);
+    pointer-events: none;
+    transform: translateY(-100%);
     transition: transform 300ms $timing-function, opacity 300ms $timing-function;
 
     &.is-open {
       transform: translate(0, 0);
       opacity: 1;
+      pointer-events: initial;
       // display: block;
     }
   }
