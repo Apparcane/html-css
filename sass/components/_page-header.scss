@@ -53,7 +53,7 @@
     left: 0;
     background-color: #fff;
     opacity: 0;
-    transform: translate(0, -150%);
+    transform: translateY(-150%);
     transition: transform 300ms $timing-function, opacity 300ms $timing-function;
 
     &.is-open {
