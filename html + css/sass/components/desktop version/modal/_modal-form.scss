@@ -1,0 +1,134 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+.form__title {
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.form__button {
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  color: $white;
+  background-color: $accent-color;
+  transition: background-color 250ms $timing-function;
+
+  &:focus,
+  &:hover {
+    background-color: #188ce8;
+  }
+}
+
+.group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form__field {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 0;
+  border: none;
+}
+
+.form__label {
+  color: $text-color;
+  margin-bottom: 4px;
+}
+
+.form__input {
+  height: 40px;
+  width: 100%;
+  padding: 11px 12px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+    color: $accent-color;
+    outline: none;
+  }
+}
+
+.form__icon {
+  transition: color 250ms $timing-function;
+  fill: currentColor;
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  /* transform: translateY(-50%); */
+
+  .form__input:hover + &,
+  .form__input:focus + & {
+    color: $accent-color;
+  }
+}
+
+.form__comments {
+  margin-bottom: 25px;
+}
+
+.form__textarea {
+  width: 100%;
+  resize: none;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+    color: $accent-color;
+    outline: none;
+  }
+}
+
+.policy {
+  margin-bottom: 30px;
+  padding-left: 10px;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.policy__chekbox {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 3px;
+  background-image: url("../image/icon/checked.svg");
+  background-size: contain;
+  background-origin: border-box;
+  transition: background-color 250ms $timing-function, border-color 250ms $timing-function;
+}
+
+.policy__box {
+  margin-right: 9px;
+}
+
+.policy__box:checked + .policy__chekbox {
+  border-color: $accent-color;
+  background-color: $accent-color;
+}
+
+.policy__link {
+  text-decoration-line: underline;
+  color: $accent-color;
+}

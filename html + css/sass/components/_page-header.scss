@@ -1,0 +1,233 @@
+.main-nav {
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  border-bottom: 1px solid #ececec;
+
+  height: 60px;
+  @media screen and (min-width: 768px) {
+    height: 80px;
+  }
+}
+
+.logo {
+  color: #000000;
+  // font-size: 26px;
+  font-family: Raleway, serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.2;
+  text-decoration: none;
+  &--color {
+    color: $accent-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+
+  @media sreen and (min-width: 1200px) {
+    font-size: 26px;
+  }
+}
+
+.menu {
+  display: block;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 767px) {
+    border-top: 1px solid #ececec;
+    text-align: center;
+    position: absolute;
+    padding-bottom: 50px;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-100%);
+    transition: transform 300ms $timing-function, opacity 300ms $timing-function;
+
+    &.is-open {
+      transform: translate(0, 0);
+      opacity: 1;
+      pointer-events: initial;
+      z-index: 1;
+      // display: block;
+    }
+  }
+}
+
+.menu-button {
+  display: none;
+  background-color: transparent;
+  border: none;
+  @media screen and (max-width: 767px) {
+    display: block;
+    margin-left: auto;
+  }
+
+  & .icon-mobile-close {
+    display: none;
+  }
+
+  & .icon-mobile-menu {
+    display: block;
+  }
+
+  &.is-open {
+    .icon-mobile-menu {
+      display: none;
+    }
+
+    & .icon-mobile-close {
+      display: block;
+    }
+  }
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+
+  @media screen and (max-width: 767px) {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    margin-bottom: 15px;
+  }
+}
+
+.nav-list__item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  @media screen and (max-width: 767px) {
+    &:nth-child(n) {
+      margin-right: 0;
+    }
+  }
+}
+
+.nav-list__link {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: $primary-text-color;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
+  transition: color 250ms $timing-function;
+
+  &:focus,
+  &:hover {
+    color: $accent-color;
+  }
+}
+
+.nav__link--active {
+  position: relative;
+  color: $accent-color;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+
+    background-color: $accent-color;
+  }
+}
+
+.contacts {
+  margin-left: auto;
+  margin-right: 0;
+  font-style: normal;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    align-items: flex-start;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: -10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
+}
+
+.contacts__link {
+  color: $primary-text-color;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
+  height: 18px;
+
+  transition: color 250ms $timing-function;
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    &:not(:last-child) {
+      margin-bottom: 0;
+      margin-right: 30px;
+    }
+  }
+
+  // &:not(:last-child) {
+  //   margin-right: 30px;
+  // }
+
+  &:focus,
+  &:hover {
+    color: $accent-color;
+  }
+}
+
+.contacts__icon {
+  margin-right: 10px;
+  fill: #757575;
+  transition: fill 250ms $timing-function;
+
+  .contacts__link:focus &,
+  .contacts__link:hover & {
+    fill: $accent-color;
+  }
+}

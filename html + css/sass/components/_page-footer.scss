@@ -1,0 +1,236 @@
+footer {
+  background: $background-footer;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    // height: 210px;
+    padding-bottom: 30px;
+    // align-items: center;
+  }
+}
+
+.footer-link {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: inline-flex;
+    text-align: center;
+  }
+}
+
+.footer__address {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+.footer__logo {
+  color: #ffffff;
+  display: block;
+  width: 130px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin: 0;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+}
+
+.address {
+  color: #ffffff;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    // margin-right: 85px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+    width: 230px;
+  }
+
+  &__link {
+    margin-top: 9px;
+    color: $footer-adress-color;
+    text-decoration: none;
+  }
+}
+
+.footer-social {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  margin-bottom: 60px;
+}
+
+.footer-social__title {
+  color: $white;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.15;
+}
+
+.footer-social__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0px;
+}
+
+.footer-social__link {
+  display: block;
+  padding-top: 12px;
+  text-align: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-decoration: none;
+  fill: $white;
+
+  transition: background-color 250ms $timing-function;
+
+  &:focus,
+  &:hover {
+    background-color: $accent-color;
+  }
+}
+
+.footer-social__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-mailing {
+  text-align: center;
+  display: inline-flex;
+  flex-direction: column;
+
+  @media screen and (max-width: 1199px) {
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    // margin-left: auto;
+  }
+
+  //   padding-left: 94px;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 20px;
+    color: $white;
+    display: inline;
+    align-items: center;
+  }
+}
+
+.footer__form {
+  @media screen and (min-width: 1200px) {
+    display: inline-flex;
+    // justify-content: space-around;
+  }
+}
+
+.footer-mailing__field {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 15px 16px;
+  width: 450px;
+  // height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  background-color: transparent;
+  color: $white;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  transition: border-color 250ms $timing-function;
+
+  @media screen and (max-width: 479px) {
+    width: 300px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 300px;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+    color: $accent-color;
+    outline: none;
+  }
+}
+
+.footer-button {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  border: none;
+  padding: 0;
+  border-radius: 4px;
+  background-color: $accent-color;
+  color: $white;
+  cursor: pointer;
+  transition: background-color 250ms $timing-function;
+
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+    margin-left: 12px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}
+
+.footer-button__icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}

@@ -1,0 +1,34 @@
+.filter-list {
+  display: flex;
+  padding-top: 94px;
+  justify-content: center;
+}
+
+.filter-list__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filter-list__btn {
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding: 6px 22px;
+  border: 0;
+  border-radius: 4px;
+
+  background-color: $background-primary-color;
+  text-align: center;
+  cursor: pointer;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  font-family: inherit;
+
+  transition: background-color 250ms $timing-function, color 250ms $timing-function;
+
+  &:focus,
+  &:hover {
+    background-color: $accent-color;
+    color: $white;
+  }
+}
